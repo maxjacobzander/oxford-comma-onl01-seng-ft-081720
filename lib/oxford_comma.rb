@@ -5,7 +5,7 @@ def oxford_comma(array)
     array_2 = array.pop
     comma_array = array.join(", ")
     comma_array << "and #{array_2}"
-    array.join(" ")
+    comma_array.join(" ")
   elsif array.length < 2
     array.join
   end
